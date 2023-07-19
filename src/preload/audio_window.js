@@ -76,7 +76,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
         //     }, 65000);
         // }
 
-        else if (time_now_adhan === data.dhuhr && audioJson?.start === false && settings?.notifications_adhan) {
+        else if (time_now_adhan === data.dhuhr && audioJson?.start === false && settings?.notifications_adhan && settingss.athan !== "") {
             audioBoolean(App_Path, true);
             ipcRenderer.send('show3');
             document.getElementById('text').innerText = 'حان الان وقت صلاة الظهر'
