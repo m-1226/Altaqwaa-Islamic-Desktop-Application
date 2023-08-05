@@ -56,11 +56,17 @@ window.addEventListener('DOMContentLoaded', async (e) => {
             document.getElementById('audio').volume = settings?.adhanVolume || 1;
 
             // Add an event listener for the "ended" event
+            let hasAudioPlayed = false;
+
             document.getElementById('audio').addEventListener('ended', () => {
-                setTimeout(() => {
-                    document.getElementById('audio').src = path.join(__dirname, '../public/audio/أذكار/الدعاء_بعد_الصلاة_الشعراوي.mp3');
-                }, 2000);
+                if (!hasAudioPlayed) {
+                    setTimeout(() => {
+                        document.getElementById('audio').src = path.join(__dirname, '../public/audio/أذكار/الدعاء_بعد_الصلاة_الشعراوي.mp3');
+                    }, 2000);
+                    hasAudioPlayed = true;
+                }
             });
+            
 
             setTimeout(() => {
                 audioBoolean(App_Path, false);
@@ -82,11 +88,17 @@ window.addEventListener('DOMContentLoaded', async (e) => {
             document.getElementById('text').innerText = 'حان الان وقت صلاة الظهر'
             document.getElementById('audio').src = path.join(__dirname, `${settings.athan}`);
             document.getElementById('audio').volume = settings?.adhanVolume || 1;
+            let hasAudioPlayed = false;
+
             document.getElementById('audio').addEventListener('ended', () => {
-                setTimeout(() => {
-                    document.getElementById('audio').src = path.join(__dirname, '../public/audio/أذكار/الدعاء_بعد_الصلاة_الشعراوي.mp3');
-                }, 2000);
+                if (!hasAudioPlayed) {
+                    setTimeout(() => {
+                        document.getElementById('audio').src = path.join(__dirname, '../public/audio/أذكار/الدعاء_بعد_الصلاة_الشعراوي.mp3');
+                    }, 2000);
+                    hasAudioPlayed = true;
+                }
             });
+            
             setTimeout(() => {
                 audioBoolean(App_Path, false);
             }, 65000);
@@ -100,11 +112,17 @@ window.addEventListener('DOMContentLoaded', async (e) => {
             document.getElementById('text').innerText = 'حان الان وقت صلاة العصر'
             document.getElementById('audio').src = path.join(__dirname, `${settings.athan}`);
             document.getElementById('audio').volume = settings?.adhanVolume || 1;
+            let hasAudioPlayed = false;
+
             document.getElementById('audio').addEventListener('ended', () => {
-                setTimeout(() => {
-                    document.getElementById('audio').src = path.join(__dirname, '../public/audio/أذكار/الدعاء_بعد_الصلاة_الشعراوي.mp3');
-                }, 2000);
+                if (!hasAudioPlayed) {
+                    setTimeout(() => {
+                        document.getElementById('audio').src = path.join(__dirname, '../public/audio/أذكار/الدعاء_بعد_الصلاة_الشعراوي.mp3');
+                    }, 2000);
+                    hasAudioPlayed = true;
+                }
             });
+            
             setTimeout(() => {
                 audioBoolean(App_Path, false);
             }, 65000);
@@ -116,11 +134,17 @@ window.addEventListener('DOMContentLoaded', async (e) => {
             document.getElementById('text').innerText = 'حان الان وقت صلاة المغرب'
             document.getElementById('audio').src = path.join(__dirname, `${settings.athan}`);
             document.getElementById('audio').volume = settings?.adhanVolume || 1;
+            let hasAudioPlayed = false;
+
             document.getElementById('audio').addEventListener('ended', () => {
-                setTimeout(() => {
-                    document.getElementById('audio').src = path.join(__dirname, '../public/audio/أذكار/الدعاء_بعد_الصلاة_الشعراوي.mp3');
-                }, 2000);
+                if (!hasAudioPlayed) {
+                    setTimeout(() => {
+                        document.getElementById('audio').src = path.join(__dirname, '../public/audio/أذكار/الدعاء_بعد_الصلاة_الشعراوي.mp3');
+                    }, 2000);
+                    hasAudioPlayed = true;
+                }
             });
+            
             setTimeout(() => {
                 audioBoolean(App_Path, false);
             }, 65000);
@@ -132,11 +156,17 @@ window.addEventListener('DOMContentLoaded', async (e) => {
             document.getElementById('text').innerText = 'حان الان وقت صلاة العشاء'
             document.getElementById('audio').src = path.join(__dirname, `${settings.athan}`);
             document.getElementById('audio').volume = settings?.adhanVolume || 1;
+            let hasAudioPlayed = false;
+
             document.getElementById('audio').addEventListener('ended', () => {
-                setTimeout(() => {
-                    document.getElementById('audio').src = path.join(__dirname, '../public/audio/أذكار/الدعاء_بعد_الصلاة_الشعراوي.mp3');
-                }, 2000);
+                if (!hasAudioPlayed) {
+                    setTimeout(() => {
+                        document.getElementById('audio').src = path.join(__dirname, '../public/audio/أذكار/الدعاء_بعد_الصلاة_الشعراوي.mp3');
+                    }, 2000);
+                    hasAudioPlayed = true;
+                }
             });
+            
             setTimeout(() => {
                 audioBoolean(App_Path, false);
             }, 65000);
